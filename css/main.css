@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
@@ -11,13 +11,37 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: 700;
 }
 
-.container {
+.wrapper {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.skip-links a{
+  position: absolute;
+  top: -40px; 
+  left: 0;
+  color: black;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-links a:focus {
+  top: 0; 
+}
+
+.skip-links a:hover {
+  color: white;
+  background-color: black;
+}
+
+.skip-links a:active {
+  color: lightblue;
+  background-color: black;
 }
 
 img {
@@ -30,6 +54,7 @@ img {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  padding-bottom: 25px;
 }
 
 .main-nav ul li {
@@ -42,6 +67,24 @@ img {
   color: inherit;
   text-decoration: none;
   font-size: 1.25rem;
+  border: 2px solid transparent;
+}
+
+.main-nav ul li a:hover {
+  color: white; 
+  background-color: black;
+  border: 2px solid black; 
+}
+
+.main-nav ul li a:active {
+  color: lightblue; 
+  border: 2px solid black; 
+}
+
+.address-info {
+  list-style: none;
+  padding-left: 0; 
+  margin-left: 0;
 }
 
 form input,
@@ -64,6 +107,24 @@ form button {
   border: 2px solid black;
   padding: 1rem;
   text-transform: uppercase;
+}
+
+form button:hover {
+  background: black;
+  text-transform: uppercase;
+  color: white;
+}
+
+form button:focus {
+  background: black;
+  text-transform: uppercase;
+  color: white;
+}
+
+form button:active {
+  background: black;
+  text-transform: uppercase;
+  color: lightblue;
 }
 
 .site-footer {
